@@ -5,6 +5,12 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent">
 
+    <FrameLayout
+        android:id="@+id/fl_fragment_detail_container"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:elevation="8dp"/>
+
     <androidx.appcompat.widget.Toolbar
         android:id="@+id/header"
         android:layout_width="416dp"

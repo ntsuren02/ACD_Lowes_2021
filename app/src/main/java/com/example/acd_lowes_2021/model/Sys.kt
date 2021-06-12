@@ -1,10 +1,13 @@
 package com.example.acd_lowes_2021.model
 
+import android.os.Parcelable
 import com.google.gson.annotations.Expose
 import com.google.gson.annotations.SerializedName
+import kotlinx.android.parcel.Parcelize
 
-class Sys {
+@Parcelize
+class Sys: Parcelable {
     @SerializedName("pod")
     @Expose
-    var pod: String? = null
+    val pod: String? = null
 }

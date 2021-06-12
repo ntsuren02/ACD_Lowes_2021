@@ -1,8 +1,9 @@
-package com.example.acd_lowes_2021.view
+package com.example.acd_lowes_2021.model
 
 import android.widget.TextView
 import androidx.appcompat.app.AppCompatActivity
 import com.example.acd_lowes_2021.R
+import com.example.acd_lowes_2021.view.MainActivity
 import com.google.gson.JsonObject
 import java.io.BufferedReader
 import java.io.IOException
@@ -15,9 +16,10 @@ import java.net.URLEncoder
 import java.util.logging.Level
 import java.util.logging.Logger
 
-class WebAPIActivity : AppCompatActivity(){
+class WebAPI : AppCompatActivity(){
     private val API_KEY = "65d00499677e59496ca2f318eb68c049"
     private val WEB_SERVICE_URL = "http://api.openweathermap.org/data/2.5/forecast"
+    val location: String? = null
 
     private fun createUrlLink(location: String): String? {
         return try {

@@ -1,14 +1,17 @@
 package com.example.acd_lowes_2021.model
 
+import android.os.Parcelable
 import com.google.gson.annotations.Expose
 import com.google.gson.annotations.SerializedName
+import kotlinx.android.parcel.Parcelize
 
-class Wind {
+@Parcelize
+class Wind: Parcelable {
     @SerializedName("speed")
     @Expose
-    var speed: Double? = null
+    val speed: Double? = null
 
     @SerializedName("deg")
     @Expose
-    var deg: Int? = null
+    val deg: Int? = null
 }

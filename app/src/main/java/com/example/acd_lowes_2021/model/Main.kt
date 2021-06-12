@@ -1,42 +1,45 @@
 package com.example.acd_lowes_2021.model
 
+import android.os.Parcelable
 import com.google.gson.annotations.Expose
 import com.google.gson.annotations.SerializedName
+import kotlinx.android.parcel.Parcelize
 
-class Main {
+@Parcelize
+class Main: Parcelable {
     @SerializedName("temp")
     @Expose
-    var temp: Int? = null
+    val temp: Int? = null
 
     @SerializedName("feels_like")
     @Expose
-    var feelsLike: Int? = null
+    val feelsLike: Int? = null
 
     @SerializedName("temp_min")
     @Expose
-    var tempMin: Int? = null
+    val tempMin: Int? = null
 
     @SerializedName("temp_max")
     @Expose
-    var tempMax: Int? = null
+    val tempMax: Int? = null
 
     @SerializedName("pressure")
     @Expose
-    var pressure: Int? = null
+    val pressure: Int? = null
 
     @SerializedName("sea_level")
     @Expose
-    var seaLevel: Int? = null
+    val seaLevel: Int? = null
 
     @SerializedName("grnd_level")
     @Expose
-    var grndLevel: Int? = null
+    val grndLevel: Int? = null
 
     @SerializedName("humidity")
     @Expose
-    var humidity: Int? = null
+    val humidity: Int? = null
 
     @SerializedName("temp_kf")
     @Expose
-    var tempKf: Int? = null
+    val tempKf: Int? = null
 }
